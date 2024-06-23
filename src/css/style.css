@@ -1,0 +1,36 @@
+:root {
+  /* COLORS */
+  --primary: #ee4a73;
+  --secondary: #fb6f92;
+  --tertiary: #ff8fab;
+  --quaternary: #ffb3c6;
+  --quinary: #ffc2d1;
+  --senary: #ffe5ec;
+}
+
+body {
+  background: var(--quinary);
+  color: var(--senary);
+}
+
+.custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--senary);
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 5px;
+    cursor: grab;
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    cursor: grabbing;
+  }
+}
