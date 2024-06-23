@@ -20,7 +20,7 @@ function ModalAddGroup({ show = false, showHandler }) {
     dispatch({
       type: ACTIONS.ADD_GROUP,
       newGroupText: value,
-      randomUUID: randomUUID,
+      groupID: randomUUID,
     });
     setActiveGroupID(randomUUID);
     setValue("");
